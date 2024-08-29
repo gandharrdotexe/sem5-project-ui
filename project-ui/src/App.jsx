@@ -1,4 +1,7 @@
-import { useState } from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Navbar from './components/navbar'; // Make sure the path is correct
+
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
@@ -8,19 +11,18 @@ import { useState } from 'react'
 //   Route,
 //   Link
 // } from "react-router-dom";
-import Navbar from './components/navbar';
 function App() {
   return (
-    <Router>
+    // <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        {/* Add more routes as needed */}
-      </Routes>
-    </Router>
+      // <Routes>
+      //   <Route path="/" element={<Home />} />
+      //   <Route path="/about" element={<About />} />
+      //   <Route path="/services" element={<Services />} />
+      //   <Route path="/contact" element={<Contact />} />
+      //   {/* Add more routes as needed */}
+      // </Routes>
+    // </Router>
   );
 }
 
