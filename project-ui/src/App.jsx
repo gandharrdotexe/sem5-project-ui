@@ -14,8 +14,12 @@ import Navbar from './components/navbar'; // Make sure the path is correct
 function App() {
   return (
     // <Router>
+    <>
       <Navbar />
-      // <Routes>
+      
+
+    </>
+            // <Routes>
       //   <Route path="/" element={<Home />} />
       //   <Route path="/about" element={<About />} />
       //   <Route path="/services" element={<Services />} />
