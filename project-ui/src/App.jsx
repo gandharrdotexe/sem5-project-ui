@@ -5,9 +5,9 @@ import Navbar from './components/navbar'; // Make sure the path is correct
 function App() {
   return (
     
-    <>
+    <div>
       <Navbar />  
-    </>
+    </div>
 
   );
 }
