@@ -22,7 +22,7 @@ const Design = () => {
                 <div className='absolute h-2 w-2 left-1/2 bg-white rounded-full top-0 -translate-x-1/2 -translate-y-1/2'></div>
             </div>
             <div className='absolute h-[444px] w-[444px] md:h-[780px] md:w-[780px] border opacity-20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-dashed'></div>
-            <div className='absolute h-[544px] w-[544px] md:h-[980px] md:w-[980px] border opacity-20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-dashed'></div>
+            <div className='absolute h-[544px] w-[544px] md:h-[980px] md:w-[980px] border opacity-20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'></div>
 
             {/* Main Content */}
             <div className='container relative mt-16'>
