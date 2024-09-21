@@ -4,9 +4,9 @@ import MenuIcon from '../assets/icon-menu.svg';  // Import as image URL
 
 const Navbar = () => {
   return (
-    <header className='py-4 border-b border-white/15 md:border-none'>
+    <header className='py-4 border-b border-white/15 md:border-none sticky top-0 z-10 '>
       <div className="container mx-auto px-4"> {/* Ensure the container is centered */}
-        <div className='flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl max-w-2xl mx-auto'> {/* Fix mx-auto */}
+        <div className='flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl max-w-2xl mx-auto backdrop-blur'> {/* Fix mx-auto */}
           <div>
             <div className='h-10 w-10 ml-4 border rounded-lg flex items-center justify-center border-white/15'>
               <img src={LogoIcon} alt="Logo" className='h-8 w-8 invert' /> 
