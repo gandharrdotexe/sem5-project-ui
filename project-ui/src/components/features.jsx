@@ -1,5 +1,5 @@
 import React from 'react';
-import { Player } from 'react-lottie-player';
+import Lottie from 'lottie-react';
 
 const tabs= [
     {
@@ -36,12 +36,10 @@ const Features = () => {
                      our AI-driven tool has revolutionalized the way businesses approach SEO</p>
                      {tabs.map((tab) =>(
                         <div key={tab.title}>
-                            <Player
-                            autoplay
-                            loop
-                            src={tab.icon} // Path to your animation file
-                            style={{ width: tab.backgroundSizeX, height: tab.backgroundSizeX }}
-                        />
+                            <Lottie
+                                loop = {true}
+                                animationData={tab.icon} // Correct path to your Lottie JSON file
+                            />
                         </div>
                      ))}
             </div>
