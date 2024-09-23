@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@lottiefiles/dotlottie-web": "^0.33.0",
     "autoprefixer": "^10.4.20",
     "flowbite": "^2.5.1",
     "postcss": "^8.4.47",
