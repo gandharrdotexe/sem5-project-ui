@@ -1,6 +1,7 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 
+
 const tabs= [
     {
         icon: '/assets/lottie/vroom.lottie',
@@ -37,9 +38,11 @@ const Features = () => {
                      {tabs.map((tab) =>(
                         <div key={tab.title}>
                             <Lottie
-                                loop = {true}
-                                animationData={tab.icon} // Correct path to your Lottie JSON file
-                            />
+                                loop
+                                src={tab.icon}
+                                autoplay
+                                className='h-5 w-5' 
+                            ></Lottie>
                         </div>
                      ))}
             </div>
