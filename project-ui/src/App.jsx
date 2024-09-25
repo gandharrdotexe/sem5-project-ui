@@ -4,6 +4,8 @@ import Navbar from './components/navbar'; // Make sure the path is correct
 import Design from './components/3ddesign';
 import Features from './components/features';
 import SimpleAnimation from './components/simpleanimation';
+import waitList from './components/waitList';
+
 function App() {
   return (
     
@@ -11,9 +13,9 @@ function App() {
       <Navbar />
       <Design />
       <Features />
-      {/* <SimpleAnimation/> */}
-    </div>
+      <waitList />
 
+    </div>
   );
 }
 
