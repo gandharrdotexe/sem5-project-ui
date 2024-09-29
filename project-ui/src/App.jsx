@@ -7,13 +7,13 @@ import WaitList from './components/waitList'
 function App() {
   return (
     
-    <>
+    <div>
       <Navbar />
       <Design />
       <Features />
       <WaitList />
 
-    </>
+    </div>
   );
 }
 
