@@ -10,9 +10,13 @@ const waitList = () =>{
                 <div className='border border-white/15 py-24 rounded-xl overflow-hidden relative' style={{
                     backgroundImage: `url(${Stars})`
                 }}>
-                    <div className='absolute inset-0 bg-[rgb(74,32,138)] bg-blend-overlay [masked-image:radial-gradient(50%_50%_at_50%_35%, black, transparent)]' style={{
-                         backgroundImage: `url(${GridLines})`
-                    }}></div>
+<div className='absolute inset-0 bg-[rgb(74,32,138)] bg-blend-overlay' 
+    style={{
+        backgroundImage: `url(${GridLines})`,
+        maskImage: 'radial-gradient(50% 50% at 50% 35%, black, transparent)'
+    }}>
+</div>
+
                     <div className='relative'>
                     <h2 className='text-5xl tracking-tighter text-center font-medium'>AI-driven SEO for everyone</h2>
                     <p className='text-center text-lg text-white/70 px-4 mt-5 tracking-tighter'>Achieve clear, impactful results without the complexity.</p>
