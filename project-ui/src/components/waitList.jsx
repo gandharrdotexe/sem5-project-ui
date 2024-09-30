@@ -18,8 +18,8 @@ const waitList = () =>{
 </div>
 
                     <div className='relative'>
-                    <h2 className='text-5xl tracking-tighter text-center font-medium'>AI-driven SEO for everyone</h2>
-                    <p className='text-center text-lg text-white/70 px-4 mt-5 tracking-tighter'>Achieve clear, impactful results without the complexity.</p>
+                    <h2 className='text-5xl md:text-6xl max-w-sm mx-auto tracking-tighter text-center font-medium'>AI-driven SEO for everyone</h2>
+                    <p className='text-center text-lg md:text-xl max-w-xs mx-auto text-white/70 px-4 mt-5 tracking-tighter'>Achieve clear, impactful results without the complexity.</p>
                     <div className='flex justify-center mt-8'>
                     <button className='relative py-3 px-4 rounded-lg font-medium text-sm bg-gradient-to-b from-[#190d2e] to-[#4a2058] shadow-[0_0_12px_#8c45ff]'>
                                 <div className='absolute inset-0'>
