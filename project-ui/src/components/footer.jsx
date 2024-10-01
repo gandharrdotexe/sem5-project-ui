@@ -10,11 +10,11 @@ const Footer = () =>{
                 </div>
                 <div>
                     <nav>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                        <a href="">Features</a>
+                        <a href="">Developers</a>
+                        <a href="">Changelog</a>
+                        <a href="">Pricing</a>
+                        <a href="">Blogs</a>
                     </nav>
                 </div>
                 <div></div>
