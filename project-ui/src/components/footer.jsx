@@ -14,17 +14,17 @@ const Footer = () =>{
                 </div>
                 <div>
                     <nav>
-                        <a href="">Features</a>
-                        <a href="">Developers</a>
-                        <a href="">Changelog</a>
+                        <a href="" className="text-white/70 hover:text-white transition text-xs">Features</a>
+                        <a href="" className="text-white/70 hover:text-white transition text-xs">Developers</a>
+                        <a href="" >Changelog</a>
                         <a href="">Pricing</a>
                         <a href="">Blogs</a>
                     </nav>
                 </div>
                 <div>
-                    <img src={InstaLogo} alt="Logo" className='h-8 w-8 invert' /> 
-                    <img src={XLogo} alt="Logo" className='h-8 w-8 invert' /> 
-                    <img src={YTLogo} alt="Logo" className='h-8 w-8 invert' /> 
+                    <img src={InstaLogo} alt="Logo" className='h-8 w-8 invert hover:text-white transition' /> 
+                    <img src={XLogo} alt="Logo" className='h-8 w-8 invert hover:text-white transition' /> 
+                    <img src={YTLogo} alt="Logo" className='h-8 w-8 invert hover:text-white transition' /> 
 
                 </div>
                 </div>
