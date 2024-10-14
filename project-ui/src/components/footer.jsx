@@ -6,25 +6,25 @@ import YTLogo from '../assets/social-youtube.svg';
 const Footer = () =>{
     return (
         <footer className="py-5 border-t border-white/15">
-            <div className="container">
-                <div className="flex flex-col">
-                <div>
+            <div className="container p-3">
+                <div className="flex flex-col lg:flex-row gap-8">
+                <div className="flex gap-2 items-center lg:flex-1">
                     <img src={LogoIcon} alt="Logo" className='h-8 w-8 invert' /> 
-                    <div>AI-SEO Tool</div>
+                    <div className="font-medium">AI-SEO Tool</div>
                 </div>
-                <div>
-                    <nav>
-                        <a href="" className="text-white/70 hover:text-white transition text-xs">Features</a>
-                        <a href="" className="text-white/70 hover:text-white transition text-xs">Developers</a>
-                        <a href="" >Changelog</a>
-                        <a href="">Pricing</a>
-                        <a href="">Blogs</a>
+                
+                    <nav className="flex flex-col lg:flex-row gap-5 lg:gap-8 lg:flex-1">
+                        <a href="" className="text-white/70 hover:text-white transition text-xs md:text-sm">Features</a>
+                        <a href="" className="text-white/70 hover:text-white transition text-xs md:text-sm">Developers</a>
+                        <a href="" className="text-white/70 hover:text-white transition text-xs md:text-sm">Changelog</a>
+                        <a href="" className="text-white/70 hover:text-white transition text-xs md:text-sm">Pricing</a>
+                        <a href="" className="text-white/70 hover:text-white transition text-xs md:text-sm">Blogs</a>
                     </nav>
-                </div>
-                <div>
-                    <img src={InstaLogo} alt="Logo" className='h-8 w-8 invert hover:text-white transition' /> 
-                    <img src={XLogo} alt="Logo" className='h-8 w-8 invert hover:text-white transition' /> 
-                    <img src={YTLogo} alt="Logo" className='h-8 w-8 invert hover:text-white transition' /> 
+                
+                <div className="flex gap-5 lg:flex-1 lg:justify-end">
+                    <img src={InstaLogo} alt="Logo" className='h-8 w-8 invert text-white/70 hover:text-white transition' /> 
+                    <img src={XLogo} alt="Logo" className='h-8 w-8 invert text-white/70 hover:text-white transition' /> 
+                    <img src={YTLogo} alt="Logo" className='h-8 w-8 invert text-white/70 hover:text-white transition' /> 
 
                 </div>
                 </div>
