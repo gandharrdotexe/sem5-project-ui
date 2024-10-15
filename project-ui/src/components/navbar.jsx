@@ -12,7 +12,9 @@ const Navbar = () => {
           <div className='absolute inset-0 backdrop-blur -z-10 hidden md:block'></div>
           <div>
             <div className='h-10 w-10 ml-4 border rounded-lg flex items-center justify-center border-white/15'>
-              <img src={LogoIcon} alt="Logo" className='h-8 w-8 invert' /> 
+              <Link to="design" smooth={true} duration={500}>
+                <img src={LogoIcon} alt="Logo" className='h-8 w-8 invert' />
+              </Link> 
             </div>
           </div>
 
