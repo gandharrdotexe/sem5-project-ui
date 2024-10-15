@@ -1,11 +1,20 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './navbar';     // Correct relative path
+import Design from './3ddesign';   // Correct relative path
+import WaitList from './waitList'; // Correct relative path
+import Features from './features'; // Correct relative path
+import Footer from './footer';     // Correct relative path
 
-const home = () => {
+const Home = () => {
   return (
-    <home>
-      <h1>Home page</h1>
-    </home>
-  )
-}
+    <div>
+      <Navbar />
+      <Design />
+      <Features />
+      <WaitList />
+      <Footer />
+    </div>
+  );
+};
 
-export default home
+export default Home;
