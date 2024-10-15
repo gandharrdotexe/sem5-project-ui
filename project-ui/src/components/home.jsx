@@ -1,17 +1,23 @@
 import React from 'react';
-import Navbar from './navbar';     // Correct relative path
-import Design from './3ddesign';   // Correct relative path
-import WaitList from './waitList'; // Correct relative path
-import Features from './features'; // Correct relative path
-import Footer from './footer';     // Correct relative path
+import Navbar from './navbar';
+import Design from './3ddesign';
+import WaitList from './waitList';
+import Features from './features';
+import Footer from './footer';
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <Design />
-      <Features />
-      <WaitList />
+      <section id="design">
+        <Design />
+      </section>
+      <section id="features">
+        <Features />
+      </section>
+      <section id="waitlist">
+        <WaitList />
+      </section>
       <Footer />
     </div>
   );
