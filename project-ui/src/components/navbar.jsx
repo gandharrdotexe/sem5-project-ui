@@ -14,7 +14,10 @@ const Navbar = () => {
           <div>
             <div className='h-10 w-10 ml-4 border rounded-lg flex items-center justify-center border-white/15'>
               <ScrollLink to="design" smooth={true} duration={500}>
-                <img src={LogoIcon} alt="Logo" className='h-8 w-8 invert' />
+                <RouterLink to='/'>
+                  <img src={LogoIcon} alt="Logo" className='h-8 w-8 invert' />
+                </RouterLink>
+                
               </ScrollLink> 
             </div>
           </div>
