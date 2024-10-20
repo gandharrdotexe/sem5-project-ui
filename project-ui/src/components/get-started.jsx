@@ -18,7 +18,7 @@ const Get_Started = () => {
             <div className='flex items-center justify-center gap-2'>
               
               
-                <input type="text" name="" id="" className='py-2 px-3 w-80 border border-[#4a2058]'/>
+                <input type="text" name="" id="" className='py-2 px-3 w-80 border border-white/40 caret-[#9867C5]'/>
             
               
               <button className='relative py-2 px-3 rounded-lg font-medium text-sm bg-gradient-to-b from-[#190d2e] to-[#4a2058] shadow-[0_0_12px_#8c45ff] flex items-center space-x-2'>
