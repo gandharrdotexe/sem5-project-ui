@@ -12,7 +12,8 @@ const Get_Started = () =>
   const [url, setUrl] = useState("");
   const analyze =async () =>
   {
-   setData(seoAnalyze(url));
+    setData(seoAnalyze(url));
+    console.log(data);
   }
   
   const handelChange = (e) =>
@@ -45,8 +46,8 @@ const Get_Started = () =>
                 </div>
                 <span>Analyze</span>
                 <img src={LogoIcon} alt="Logo" className='h-4 w-4 invert' />
-              </button>
-
+            </button>
+            
             </div>
             
 
