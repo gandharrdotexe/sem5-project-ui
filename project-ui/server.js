@@ -3,7 +3,7 @@ import axios from 'axios';
 import cors from 'cors';
 
 const app = express();
-const PORT = 5000;
+const PORT = 5000; 
 
 // Enable CORS for all routes
 app.use(cors());
