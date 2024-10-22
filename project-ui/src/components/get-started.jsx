@@ -18,6 +18,7 @@ const Get_Started = () => {
     try {
       const result = await seoAnalyze(url);  // Wait for the API call to complete
       setData(result);   // Set the result in state
+      console.log(result);
     } catch (error) {
       console.error("Error during SEO analysis:", error);
       setError("Failed to fetch SEO data");
@@ -70,10 +71,15 @@ const Get_Started = () => {
             {data && (
               <div>
                 <h3>SEO Analysis Result:</h3>
-                
+                <p><strong>Title: </strong>{data.seoTitle.title}</p>
+                <p><strong>Title Length: </strong>{data.seoTitle.titleLength}</p>
+                <p><strong>Meta Description: </strong>{data.metaDescription}</p>
                 <p><strong>Keywords present:</strong> {data.keywords.join(", ")}</p>
                 <p><strong>Description Keywords:</strong>{data.keywordsInTitleAndDescription.descriptionKeywords.join(', ')}</p>
-                <p><strong>Description Keywords:</strong>{data.keywordsInTitleAndDescription.titleKeywords.join(', ')}</p>
+                <p><strong>Title Keywords:</strong>{data.keywordsInTitleAndDescription.titleKeywords.join(', ')}</p>
+                <p><strong>Link Ratio</strong></p>
+                <p><strong>Internak Links: </strong>{data.linkRatio.internalLinks}</p>
+                <p><strong>Externak Links: </strong>{data.linkRatio.externalLinks}</p>
                 {/* Add more fields based on the response structure */}
               </div>
             )}
