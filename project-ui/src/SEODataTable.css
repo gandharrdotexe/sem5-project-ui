@@ -1,0 +1,114 @@
+/* Container for the table */
+.table-container {
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    /* Light text for better contrast on dark backgrounds */
+}
+
+/* Basic table layout */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background-color: #2b2b2b;
+    /* Dark background for the table */
+    color: #e0e0e0;
+    /* Light text color */
+}
+
+/* Header and cell styles */
+th,
+td {
+    border: 1px solid #444;
+    /* Subtle border for dark theme */
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3a3a3a;
+    /* Darker background for table headers */
+    font-weight: bold;
+}
+
+/* Row hover effect */
+tr:hover {
+    background-color: #383838;
+    /* Slightly lighter row background on hover */
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #5dade2;
+    /* Lighter blue for tooltip icon */
+}
+
+.tooltip sup {
+    font-size: 0.8em;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: #1c1c1c;
+    /* Dark background for tooltips */
+    color: #e0e0e0;
+    /* Light text color */
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #5dade2;
+    /* Light blue border for tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* Tooltip appears above the element */
+    left: 50%;
+    margin-left: -110px;
+    /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Tooltip arrow for better appearance */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Position the arrow at the bottom */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1c1c1c transparent transparent transparent;
+    /* Dark tooltip arrow */
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Centered content for merged cells */
+td[colspan="2"] {
+    text-align: center;
+}
+
+/* Adjust table cell alignment */
+td {
+    vertical-align: top;
+}
+
+/* Styling for the header titles */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #5dade2;
+    /* Light blue text for title */
+}

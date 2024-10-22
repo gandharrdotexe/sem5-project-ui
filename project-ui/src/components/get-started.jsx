@@ -4,6 +4,7 @@ import Footer from './footer';
 import Stars from '../assets/stars.png';
 import LogoIcon from '../assets/logo.svg';
 import { seoAnalyze } from '../api/seoAnalyze';
+import  SEODataTable  from './SEODataTable';
 
 const Get_Started = () => {
   const [data, setData] = useState(null);  // Store SEO data here
@@ -69,38 +70,24 @@ const Get_Started = () => {
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
             {data && (
-              <>
-                  <div>
-                <h3>SEO Analysis Result:</h3>
-                <p><strong>Title: </strong>{data.seoTitle.title}</p>
-                <p><strong>Title Length: </strong>{data.seoTitle.titleLength}</p>
-                <p><strong>Meta Description: </strong>{data.metaDescription}</p>
-                <p><strong>Keywords present:</strong> {data.keywords.join(", ")}</p>
-                <p><strong>Description Keywords:</strong>{data.keywordsInTitleAndDescription.descriptionKeywords.join(', ')}</p>
-                <p><strong>Title Keywords:</strong>{data.keywordsInTitleAndDescription.titleKeywords.join(', ')}</p>
-                <p><strong>Link Ratio</strong></p>
-                <p><strong>Internal Links: </strong>{data.linkRatio.internalLinks}</p>
-                <p><strong>External Links: </strong>{data.linkRatio.externalLinks}</p>
-                {/* Add more fields based on the response structure */}
-                <button
-                  className='relative py-2 px-3 rounded-lg font-medium text-sm bg-gradient-to-b from-[#190d2e] to-[#4a2058] shadow-[0_0_12px_#8c45ff] flex items-center space-x-2'
-                  // onClick={analyze}
-                >
-                  <div className='absolute inset-0'>
-                    <div className='rounded-lg border border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom, black, transparent)]'></div>
-                    <div className='rounded-lg border absolute inset-0 border-white/40 [mask-image:linear-gradient(to_top, black, transparent)]'></div>
-                    <div className='absolute inset-0 shadow-[0_0_10px_rgb(140,60,255,.7)_inset] rounded-lg'></div>
-                  </div>
-                  <span>Get Ai Suggestions</span>
-                  <img src={LogoIcon} alt="Logo" className='h-4 w-4 invert' />
-                </button>
-              </div>
-
-              </>
-              
-              
-              
-            )}
+  <>
+    <div>
+      <h3>SEO Analysis Result:</h3>
+      <SEODataTable seoData={data} />  {/* Passing the fetched data to the Table component */}
+      <button
+        className='relative py-2 px-3 rounded-lg font-medium text-sm bg-gradient-to-b from-[#190d2e] to-[#4a2058] shadow-[0_0_12px_#8c45ff] flex items-center space-x-2'
+      >
+        <div className='absolute inset-0'>
+          <div className='rounded-lg border border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom, black, transparent)]'></div>
+          <div className='rounded-lg border absolute inset-0 border-white/40 [mask-image:linear-gradient(to_top, black, transparent)]'></div>
+          <div className='absolute inset-0 shadow-[0_0_10px_rgb(140,60,255,.7)_inset] rounded-lg'></div>
+        </div>
+        <span>Get Ai Suggestions</span>
+        <img src={LogoIcon} alt="Logo" className='h-4 w-4 invert' />
+      </button>
+    </div>
+  </>
+)}
           </div>
         </div>
       </section>
